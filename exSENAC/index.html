@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício senac</title>
+</head>
+<body>
+    <h1 style="font-family:arial ;">Exercício <font color="orange">SENAC</font></h1>
+    <input type="text" id="input">
+    <input type="submit" id="botao" onclick= pegardoTexto()>
+    <h2 id="h2" style="color:orange; font-family:Arial, Helvetica, sans-serif"></h2>
+
+    <style>
+        body{
+            background: rgb(233, 250, 250);
+            text-align: center;
+        }
+    </style>
+
+    <script>
+
+        const input = document.getElementById("input");
+        const h2 = document.getElementById("h2");
+        const botao = document.getElementById("botao");
+
+        function pegardoTexto() {
+            h2.innerHTML = input.value;
+            alert(input.value);
+        }
+
+    </script>
+
+</body>
+</html>
